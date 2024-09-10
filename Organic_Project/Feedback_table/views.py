@@ -20,6 +20,6 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 class feedbackViewSet(ModelViewSet):
     queryset = Feedback.objects.all()
     serializer_class = feedbackSerializer
-    authentication_classes = [JWTAuthentication]
-    permission_classes = [permissions.IsAuthenticated]
+    # authentication_classes = [JWTAuthentication]
+    # permission_classes = [permissions.IsAuthenticated]
  
