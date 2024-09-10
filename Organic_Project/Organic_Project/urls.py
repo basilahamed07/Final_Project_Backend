@@ -65,6 +65,7 @@ urlpatterns = [
      path("api/cart/",include("cart_table.urls")),
      path("api/orders/",include("Order_Table.urls")),
      path("api/feedback/",include("Feedback_table.urls")),
+     path("api/email/",include("send_email.urls")),
 # >>>>>>> 51fd64acc2d5c0431dfe1874877c6c3dffd0ddd7
     #  path("api/User/",include("User.urls")),
     path("api/admin/",include("admin_table.urls")),

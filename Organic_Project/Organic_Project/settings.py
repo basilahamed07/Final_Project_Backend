@@ -136,7 +136,16 @@ DATABASES = {
         # 'PORT': '5432',  
 # >>>>>>> 585e0993c81d2c85e085d80f7a23183dfa4a9604
     }
+
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'dhanishkumar3003@gmail.com'  
+EMAIL_HOST_PASSWORD = 'Hello2@World' 
+
 
 AUTH_USER_MODEL = 'User_Table.CustomUser'
 
