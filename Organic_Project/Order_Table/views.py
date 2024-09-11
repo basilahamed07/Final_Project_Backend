@@ -12,6 +12,6 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 class OrderViewset(ModelViewSet):
     queryset = Order_table.objects.all()
     serializer_class = OrderSerializers
-    parser_classes = (parsers.FormParser,parsers.MultiPartParser,parsers.FileUploadParser)
+    # parser_classes = (parsers.FormParser,parsers.MultiPartParser,parsers.FileUploadParser)
     authentication_classes = [JWTAuthentication]
     permission_classes = [permissions.IsAuthenticated]

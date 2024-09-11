@@ -17,7 +17,7 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 class ShipingViewSet(ModelViewSet):
     queryset = Shipping_Table.objects.all()
     serializer_class = ShippingSerializer
-    parser_classes = (parsers.FormParser,parsers.MultiPartParser,parsers.FileUploadParser)
+    # parser_classes = (parsers.FormParser,parsers.MultiPartParser,parsers.FileUploadParser)
     authentication_classes = [JWTAuthentication]
     permission_classes = [permissions.IsAuthenticated]
  
