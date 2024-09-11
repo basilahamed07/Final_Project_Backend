@@ -1,8 +1,7 @@
-# urls.py (in your Django app)
-
+# urls.py
 from django.urls import path
-from .views import SendEmailView  # Import the view
+from .views import SendEmailView
 
 urlpatterns = [
-    path('send-email/<int:user_id>/', SendEmailView.as_view(), name='send_email'),
+    path('send-email/', SendEmailView.as_view(), name='send-email'),
 ]
